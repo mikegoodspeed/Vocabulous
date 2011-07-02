@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27C8F15713BF141B00E3FE0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15613BF141B00E3FE0C /* UIKit.framework */; };
+		27C8F15913BF141B00E3FE0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15813BF141B00E3FE0C /* Foundation.framework */; };
+		27C8F15B13BF141B00E3FE0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15A13BF141B00E3FE0C /* CoreGraphics.framework */; };
+		27C8F16113BF141B00E3FE0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27C8F15F13BF141B00E3FE0C /* InfoPlist.strings */; };
+		27C8F16413BF141B00E3FE0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C8F16313BF141B00E3FE0C /* main.m */; };
+		27C8F16713BF141B00E3FE0C /* VocabulousAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C8F16613BF141B00E3FE0C /* VocabulousAppDelegate.m */; };
+		27C8F16A13BF141B00E3FE0C /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27C8F16813BF141B00E3FE0C /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27C8F15213BF141B00E3FE0C /* Vocabulous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulous.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C8F15613BF141B00E3FE0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27C8F15813BF141B00E3FE0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27C8F15A13BF141B00E3FE0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27C8F15E13BF141B00E3FE0C /* Vocabulous-Info.plist */ = {isa = PBXFileReference; path = "Vocabulous-Info.plist"; sourceTree = "<group>"; };
+		27C8F16013BF141B00E3FE0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27C8F16213BF141B00E3FE0C /* Vocabulous-Prefix.pch */ = {isa = PBXFileReference; path = "Vocabulous-Prefix.pch"; sourceTree = "<group>"; };
+		27C8F16313BF141B00E3FE0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27C8F16513BF141B00E3FE0C /* VocabulousAppDelegate.h */ = {isa = PBXFileReference; path = VocabulousAppDelegate.h; sourceTree = "<group>"; };
+		27C8F16613BF141B00E3FE0C /* VocabulousAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VocabulousAppDelegate.m; sourceTree = "<group>"; };
+		27C8F16913BF141B00E3FE0C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27C8F14F13BF141B00E3FE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C8F15713BF141B00E3FE0C /* UIKit.framework in Frameworks */,
+				27C8F15913BF141B00E3FE0C /* Foundation.framework in Frameworks */,
+				27C8F15B13BF141B00E3FE0C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27C8F14713BF141B00E3FE0C = {
+			isa = PBXGroup;
+			children = (
+				27C8F15C13BF141B00E3FE0C /* Vocabulous */,
+				27C8F15513BF141B00E3FE0C /* Frameworks */,
+				27C8F15313BF141B00E3FE0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27C8F15313BF141B00E3FE0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27C8F15213BF141B00E3FE0C /* Vocabulous.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27C8F15513BF141B00E3FE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27C8F15613BF141B00E3FE0C /* UIKit.framework */,
+				27C8F15813BF141B00E3FE0C /* Foundation.framework */,
+				27C8F15A13BF141B00E3FE0C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27C8F15C13BF141B00E3FE0C /* Vocabulous */ = {
+			isa = PBXGroup;
+			children = (
+				27C8F16513BF141B00E3FE0C /* VocabulousAppDelegate.h */,
+				27C8F16613BF141B00E3FE0C /* VocabulousAppDelegate.m */,
+				27C8F16813BF141B00E3FE0C /* MainWindow.xib */,
+				27C8F15D13BF141B00E3FE0C /* Supporting Files */,
+			);
+			path = Vocabulous;
+			sourceTree = "<group>";
+		};
+		27C8F15D13BF141B00E3FE0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27C8F15E13BF141B00E3FE0C /* Vocabulous-Info.plist */,
+				27C8F15F13BF141B00E3FE0C /* InfoPlist.strings */,
+				27C8F16213BF141B00E3FE0C /* Vocabulous-Prefix.pch */,
+				27C8F16313BF141B00E3FE0C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27C8F15113BF141B00E3FE0C /* Vocabulous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27C8F16D13BF141B00E3FE0C /* Build configuration list for PBXNativeTarget "Vocabulous" */;
+			buildPhases = (
+				27C8F14E13BF141B00E3FE0C /* Sources */,
+				27C8F14F13BF141B00E3FE0C /* Frameworks */,
+				27C8F15013BF141B00E3FE0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vocabulous;
+			productName = Vocabulous;
+			productReference = 27C8F15213BF141B00E3FE0C /* Vocabulous.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27C8F14913BF141B00E3FE0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Mike Goodspeed";
+			};
+			buildConfigurationList = 27C8F14C13BF141B00E3FE0C /* Build configuration list for PBXProject "Vocabulous" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27C8F14713BF141B00E3FE0C;
+			productRefGroup = 27C8F15313BF141B00E3FE0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27C8F15113BF141B00E3FE0C /* Vocabulous */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27C8F15013BF141B00E3FE0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C8F16113BF141B00E3FE0C /* InfoPlist.strings in Resources */,
+				27C8F16A13BF141B00E3FE0C /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27C8F14E13BF141B00E3FE0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C8F16413BF141B00E3FE0C /* main.m in Sources */,
+				27C8F16713BF141B00E3FE0C /* VocabulousAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27C8F15F13BF141B00E3FE0C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C8F16013BF141B00E3FE0C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27C8F16813BF141B00E3FE0C /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27C8F16913BF141B00E3FE0C /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27C8F16B13BF141B00E3FE0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27C8F16C13BF141B00E3FE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		27C8F16E13BF141B00E3FE0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vocabulous/Vocabulous-Prefix.pch";
+				INFOPLIST_FILE = "Vocabulous/Vocabulous-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27C8F16F13BF141B00E3FE0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Vocabulous/Vocabulous-Prefix.pch";
+				INFOPLIST_FILE = "Vocabulous/Vocabulous-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27C8F14C13BF141B00E3FE0C /* Build configuration list for PBXProject "Vocabulous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C8F16B13BF141B00E3FE0C /* Debug */,
+				27C8F16C13BF141B00E3FE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27C8F16D13BF141B00E3FE0C /* Build configuration list for PBXNativeTarget "Vocabulous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27C8F16E13BF141B00E3FE0C /* Debug */,
+				27C8F16F13BF141B00E3FE0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27C8F14913BF141B00E3FE0C /* Project object */;
+}
