@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VocabulousAppDelegate : NSObject <UIApplicationDelegate> {
-
+@interface VocabulousAppDelegate : NSObject <UIApplicationDelegate>
+{
+    UINavigationController *nav_;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

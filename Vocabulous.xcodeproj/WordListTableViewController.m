@@ -23,7 +23,8 @@
 {
     if (!words_)
     {
-        NSURL *url = [NSURL URLWithString:@"http://www.stanford.edu/class/cs193p/vocabwords.txt"];
+        static NSString *str = @"https://github.com/mikegoodspeed/Vocabulous/raw/master/Vocabulous/vocabwords.txt";
+        NSURL *url = [NSURL URLWithString:str];
         words_ = [[NSMutableDictionary dictionaryWithContentsOfURL:url] retain]; 
     }
     return words_;
@@ -54,39 +55,6 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-    [super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -111,13 +79,24 @@
     static NSString *CellIdentifier = @"WordListTableViewCell";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
+    if (!cell)
+    {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
     cell.textLabel.text = [self wordAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [self.sections objectAtIndex:section];
+}
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    return self.sections;
 }
 
 #pragma mark - Table view delegate
@@ -128,6 +107,21 @@
     dvc.word = [self wordAtIndexPath:indexPath];
     [self.navigationController pushViewController:dvc animated:YES];
     [dvc release];
+}
+
+- (void)     tableView:(UITableView *)tableView 
+    commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+     forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        NSString *section = [self.sections objectAtIndex:indexPath.section];
+        NSMutableArray *wordsInSection = [[self.words objectForKey:section] mutableCopy];
+        [wordsInSection removeObjectAtIndex:indexPath.row];
+        [self.words setObject:wordsInSection forKey:section];
+        [wordsInSection release];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
 }
 
 @end
