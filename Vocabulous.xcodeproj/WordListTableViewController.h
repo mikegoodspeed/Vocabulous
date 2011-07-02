@@ -10,7 +10,7 @@
 
 @interface WordListTableViewController : UITableViewController
 {
-    NSMutableDictionary *words_;
-    NSArray *sections_;
+    NSMutableDictionary *words;
+    NSArray *sections;
 }
 @end

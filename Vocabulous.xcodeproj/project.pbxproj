@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		275E086713BF216900C762B0 /* vocabwords.txt in Resources */ = {isa = PBXBuildFile; fileRef = 275E086613BF216900C762B0 /* vocabwords.txt */; };
+		275E086B13BF21DD00C762B0 /* DefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275E086A13BF21DD00C762B0 /* DefinitionViewController.m */; };
 		27C8F15713BF141B00E3FE0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15613BF141B00E3FE0C /* UIKit.framework */; };
 		27C8F15913BF141B00E3FE0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15813BF141B00E3FE0C /* Foundation.framework */; };
 		27C8F15B13BF141B00E3FE0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C8F15A13BF141B00E3FE0C /* CoreGraphics.framework */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		275E086613BF216900C762B0 /* vocabwords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vocabwords.txt; sourceTree = "<group>"; };
+		275E086913BF21DD00C762B0 /* DefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionViewController.h; sourceTree = "<group>"; };
+		275E086A13BF21DD00C762B0 /* DefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionViewController.m; sourceTree = "<group>"; };
 		27C8F15213BF141B00E3FE0C /* Vocabulous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vocabulous.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C8F15613BF141B00E3FE0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		27C8F15813BF141B00E3FE0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,11 +82,13 @@
 		27C8F15C13BF141B00E3FE0C /* Vocabulous */ = {
 			isa = PBXGroup;
 			children = (
+				275E086913BF21DD00C762B0 /* DefinitionViewController.h */,
+				275E086A13BF21DD00C762B0 /* DefinitionViewController.m */,
+				27C8F16813BF141B00E3FE0C /* MainWindow.xib */,
 				27C8F16513BF141B00E3FE0C /* VocabulousAppDelegate.h */,
 				27C8F16613BF141B00E3FE0C /* VocabulousAppDelegate.m */,
 				27C8F17513BF15EE00E3FE0C /* WordListTableViewController.h */,
 				27C8F17613BF15EE00E3FE0C /* WordListTableViewController.m */,
-				27C8F16813BF141B00E3FE0C /* MainWindow.xib */,
 				27C8F15D13BF141B00E3FE0C /* Supporting Files */,
 			);
 			path = Vocabulous;
@@ -90,6 +97,7 @@
 		27C8F15D13BF141B00E3FE0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				275E086613BF216900C762B0 /* vocabwords.txt */,
 				27C8F15E13BF141B00E3FE0C /* Vocabulous-Info.plist */,
 				27C8F15F13BF141B00E3FE0C /* InfoPlist.strings */,
 				27C8F16213BF141B00E3FE0C /* Vocabulous-Prefix.pch */,
@@ -150,6 +158,7 @@
 			files = (
 				27C8F16113BF141B00E3FE0C /* InfoPlist.strings in Resources */,
 				27C8F16A13BF141B00E3FE0C /* MainWindow.xib in Resources */,
+				275E086713BF216900C762B0 /* vocabwords.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +172,7 @@
 				27C8F16413BF141B00E3FE0C /* main.m in Sources */,
 				27C8F16713BF141B00E3FE0C /* VocabulousAppDelegate.m in Sources */,
 				27C8F17713BF15EE00E3FE0C /* WordListTableViewController.m in Sources */,
+				275E086B13BF21DD00C762B0 /* DefinitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +277,7 @@
 				27C8F16F13BF141B00E3FE0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

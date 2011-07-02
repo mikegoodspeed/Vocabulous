@@ -11,6 +11,7 @@
 
 @implementation VocabulousAppDelegate
 
+
 @synthesize window=_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -21,7 +22,6 @@
     [nav pushViewController:wltvc animated:NO];
     [wltvc release];
     [self.window addSubview:nav.view];
-    [nav release];
     [self.window makeKeyAndVisible];
     return YES;
 }
