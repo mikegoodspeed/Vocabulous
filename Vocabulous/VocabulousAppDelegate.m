@@ -7,15 +7,21 @@
 //
 
 #import "VocabulousAppDelegate.h"
+#import "WordListTableViewController.h"
 
 @implementation VocabulousAppDelegate
-
 
 @synthesize window=_window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *nav = [[UINavigationController alloc] init];
+    WordListTableViewController *wltvc = [[WordListTableViewController alloc] init];
+    [nav pushViewController:wltvc animated:NO];
+    [wltvc release];
+    [self.window addSubview:nav.view];
+    [nav release];
     [self.window makeKeyAndVisible];
     return YES;
 }
