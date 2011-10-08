@@ -14,10 +14,10 @@
 
 - (NSURLRequest *)urlRequest
 {
-    NSString *urlString = @"http://www.google.com/dictionary";
+    NSString *urlString = @"http://www.google.com/search?tbs=dfn:1&q=";
     if (self.word)
     {
-        urlString = [urlString stringByAppendingFormat:@"?langpair=en%%7Cen&q=%@", self.word];
+        urlString = [urlString stringByAppendingString:self.word];
     }
     return [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]];
     
